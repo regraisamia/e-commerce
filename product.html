@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de produits pour MyShop">
+    <title>Produits - My E-commerce Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">MyShop</a>
+            <nav class="space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="product.html" class="text-gray-700 hover:text-blue-600">Produits</a>
+                <a href="cart.html" class="text-gray-700 hover:text-blue-600">Panier</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Listings de Produits -->
+
+    <!-- Électronique et Gadgets -->
+    <section id="electronics" class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold mb-8">Électronique et Gadgets</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Smartphone X12 -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Smartphone X12</h3>
+                <p class="text-gray-700 mb-2">Un smartphone avec 128 Go de stockage et un écran AMOLED.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 3000 DH</p>
+                <button onclick="addToCart('Smartphone X12')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Tablette ProTab 10 -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Tablette ProTab 10</h3>
+                <p class="text-gray-700 mb-2">Tablette 10 pouces, idéale pour le travail et le divertissement.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 2000 DH</p>
+                <button onclick="addToCart('Tablette ProTab 10')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Montre Connectée Fit+ -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Montre Connectée Fit+</h3>
+                <p class="text-gray-700 mb-2">Suivi de la condition physique et notifications en temps réel.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 500 DH</p>
+                <button onclick="addToCart('Montre Connectée Fit+')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Enceinte Bluetooth SoundBoom -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Enceinte Bluetooth SoundBoom</h3>
+                <p class="text-gray-700 mb-2">Enceinte portable avec basse améliorée et longue autonomie.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 400 DH</p>
+                <button onclick="addToCart('Enceinte Bluetooth SoundBoom')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Casque Sans Fil ClearSound -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Casque Sans Fil ClearSound</h3>
+                <p class="text-gray-700 mb-2">Casque ANC pour une expérience sonore immersive.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 600 DH</p>
+                <button onclick="addToCart('Casque Sans Fil ClearSound')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Chargeur Rapide TurboCharge -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Chargeur Rapide TurboCharge</h3>
+                <p class="text-gray-700 mb-2">Chargeur compatible avec la plupart des smartphones.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 100 DH</p>
+                <button onclick="addToCart('Chargeur Rapide TurboCharge')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maison et Décoration -->
+    <section id="home-accessories" class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold mb-8">Maison et Décoration</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Lampe LED Dimmable -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Lampe LED Dimmable</h3>
+                <p class="text-gray-700 mb-2">Lampe de chevet réglable avec plusieurs températures de couleur.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 150 DH</p>
+                <button onclick="addToCart('Lampe LED Dimmable')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Plaid Douillet en Polaire -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Plaid Douillet en Polaire</h3>
+                <p class="text-gray-700 mb-2">Plaid doux et confortable, parfait pour l’hiver.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 200 DH</p>
+                <button onclick="addToCart('Plaid Douillet en Polaire')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Diffuseur d'Huiles Essentielles Aroma -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Diffuseur d'Huiles Essentielles Aroma</h3>
+                <p class="text-gray-700 mb-2">Créez une ambiance relaxante à la maison.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 250 DH</p>
+                <button onclick="addToCart('Diffuseur d\'Huiles Essentielles Aroma')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Ensemble de Coussin Déco -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Ensemble de Coussin Déco</h3>
+                <p class="text-gray-700 mb-2">Set de 4 coussins colorés pour un intérieur chaleureux.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 300 DH</p>
+                <button onclick="addToCart('Ensemble de Coussin Déco')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Cadres Muraux Vintage -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Cadres Muraux Vintage</h3>
+                <p class="text-gray-700 mb-2">Ensemble de 5 cadres pour photos ou illustrations.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 180 DH</p>
+                <button onclick="addToCart('Cadres Muraux Vintage')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mode et Accessoires -->
+    <section id="fashion" class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold mb-8">Mode et Accessoires</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Montre Élégante en Cuir -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Montre Élégante en Cuir</h3>
+                <p class="text-gray-700 mb-2">Montre avec bracelet en cuir pour un style intemporel.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 450 DH</p>
+                <button onclick="addToCart('Montre Élégante en Cuir')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Sac à Main en Cuir -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Sac à Main en Cuir</h3>
+                <p class="text-gray-700 mb-2">Sac chic et spacieux pour un usage quotidien.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 600 DH</p>
+                <button onclick="addToCart('Sac à Main en Cuir')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Chaussures de Sport UltraComfort -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Chaussures de Sport UltraComfort</h3>
+                <p class="text-gray-700 mb-2">Chaussures légères et confortables pour vos activités.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 700 DH</p>
+                <button onclick="addToCart('Chaussures de Sport UltraComfort')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Lunettes de Soleil Fashion -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Lunettes de Soleil Fashion</h3>
+                <p class="text-gray-700 mb-2">Lunettes de soleil tendance pour l'été.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 250 DH</p>
+                <button onclick="addToCart('Lunettes de Soleil Fashion')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+            <!-- Ceinture en Cuir Classique -->
+            <div class="border p-4 text-center rounded-lg shadow-lg">
+                <h3 class="text-lg font-bold">Ceinture en Cuir Classique</h3>
+                <p class="text-gray-700 mb-2">Ceinture élégante en cuir, parfaite pour toutes les occasions.</p>
+                <p class="text-gray-900 font-semibold mb-2">Prix : 180 DH</p>
+                <button onclick="addToCart('Ceinture en Cuir Classique')" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p>&copy; 2024 EzyShop. Tous droits réservés.</p>
+  </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        function addToCart(product) {
+            alert(`${product} a été ajouté au panier !`);
+        }
+    </script>
+</body>
+
+</html>

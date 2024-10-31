@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EzyShop - Your Online Shopping Destination">
+  <title>Home - EzyShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">EzyShop</a>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="product.html" class="text-gray-700 hover:text-blue-600">Products</a>
+        <a href="cart.html" class="text-gray-700 hover:text-blue-600">Cart</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Promotional Banner -->
+  <section class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-xl font-bold">Offre Spéciale ! - 20% de réduction sur votre première commande !</h2>
+      <p class="mt-2">Utilisez le code : EZY20 lors de votre commande.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-6">À propos de notre magasin</h2>
+    <p class="text-lg text-gray-700">
+      Bienvenue sur EzyShop, votre nouvelle destination en ligne pour des produits pratiques, tendances et abordables ! 
+      Nous croyons que le shopping en ligne devrait être facile, rapide et agréable. Que vous cherchiez des accessoires pour la maison, 
+      des gadgets technologiques ou des essentiels du quotidien, nous avons tout ce dont vous avez besoin. 
+      Chez EzyShop, chaque produit est soigneusement sélectionné pour garantir qualité et satisfaction. 
+      Profitez de notre service client dédié, de nos offres exclusives et d'une expérience d'achat sans stress !
+    </p>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center">Shop by Categories</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Category 1 -->
+      <a href="product.html#electronics" class="block border p-6 rounded-lg shadow-lg bg-gray-50 hover:bg-blue-100 transition duration-300">
+        <h3 class="text-lg font-bold text-blue-600">Électronique et Gadgets</h3>
+        <p class="text-gray-700">Découvrez les dernières innovations en électronique et gadgets.</p>
+      </a>
+      <!-- Category 2 -->
+      <a href="product.html#home-accessories" class="block border p-6 rounded-lg shadow-lg bg-gray-50 hover:bg-blue-100 transition duration-300">
+        <h3 class="text-lg font-bold text-blue-600">Accessoires pour la maison</h3>
+        <p class="text-gray-700">Apportez du style à votre maison avec nos accessoires élégants.</p>
+      </a>
+      
+      <a href="product.html#fashion" class="block border p-6 rounded-lg shadow-lg bg-gray-50 hover:bg-blue-100 transition duration-300">
+        <h3 class="text-lg font-bold text-blue-600">Mode et accessoires</h3>
+        <p class="text-gray-700">Explorez nos derniers accessoires de mode.</p>
+      </a>
+      
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold mb-6">Avis des Clients</h2>
+    <div class="space-y-4">
+      <blockquote class="border-l-4 border-blue-600 pl-4">
+        <p class="text-lg italic">"Une expérience d'achat incroyable ! Les produits sont de très bonne qualité et l'expédition rapide."</p>
+        <cite class="text-gray-600">- Client satisfait</cite>
+      </blockquote>
+      <blockquote class="border-l-4 border-blue-600 pl-4">
+        <p class="text-lg italic">"EzyShop a vraiment facilité mon shopping en ligne. Je recommande vivement !"</p>
+        <cite class="text-gray-600">- Client heureux</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Abonnez-vous à notre Newsletter</h2>
+      <p class="mb-4">Recevez les dernières offres et mises à jour directement dans votre boîte mail.</p>
+      <form class="flex justify-center">
+        <input type="email" placeholder="Votre adresse e-mail" class="border p-2 rounded-l-md" required>
+        <button type="submit" class="bg-blue-600 text-white p-2 rounded-r-md">S'abonner</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p>&copy; 2024 EzyShop. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
