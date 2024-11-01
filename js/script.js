@@ -48,14 +48,14 @@ function updateCartDisplay() {
       <div>
         <span>${product.name}</span>
         <div class="flex items-center space-x-2">
-          <button onclick="updateQuantity(${product.id}, -1)" class="text-gray-500">-</button>
+          <button onclick="updateQuantity('${product.id}', -1)" class="text-gray-500">-</button>
           <span>${product.quantity}</span>
-          <button onclick="updateQuantity(${product.id}, 1)" class="text-gray-500">+</button>
+          <button onclick="updateQuantity('${product.id}', 1)" class="text-gray-500">+</button>
         </div>
       </div>
       <div class="flex items-center space-x-2">
         <span>${product.price * product.quantity} DH</span>
-        <button onclick="removeFromCart(${product.id})" class="text-red-600">Delete</button>
+        <button onclick="removeFromCart('${product.id}')" class="text-red-600">Delete</button>
       </div>
     `;
     cartItemsDiv.appendChild(item);
@@ -65,6 +65,7 @@ function updateCartDisplay() {
   totalElement.innerText = `Total: ${total} DH`;
   checkoutButton.disabled = cart.length === 0;
 }
+
 
 function updateQuantity(productId, change) {
   const product = cart.find(item => item.id === productId);
